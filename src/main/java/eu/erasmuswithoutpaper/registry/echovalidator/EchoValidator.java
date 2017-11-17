@@ -91,12 +91,8 @@ public class EchoValidator {
     /* Generate the IDs of the covered HEIs. */
 
     this.myCoveredHeiIDs = new ArrayList<>();
-    if (Application.isProductionSite()) {
-      // We will never introduce artificial HEIs in the official registry.
-    } else {
-      for (int i = 1; i <= 2; i++) {
-        this.myCoveredHeiIDs.add("hei0" + i + ".developers.erasmuswithoutpaper.eu");
-      }
+    for (int i = 1; i <= 2; i++) {
+      this.myCoveredHeiIDs.add("hei0" + i + ".developers.erasmuswithoutpaper.eu");
     }
   }
 

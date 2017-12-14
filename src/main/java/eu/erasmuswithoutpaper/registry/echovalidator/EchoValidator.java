@@ -203,7 +203,7 @@ public class EchoValidator {
     return this.myClientRsaKeyPair;
   }
 
-  KeyPair getServerRsaKeyPairInUse() {
+  public KeyPair getServerRsaKeyPairInUse() {
     return this.myServerRsaKeyPair;
   }
 
